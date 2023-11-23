@@ -13,7 +13,7 @@ class Data:
 
 def index():
     with (ui.column().classes(body)):
-        ui.label('Vigenere Cipher').classes(h1)
+        ui.label('Vigenère Cipher').classes(h1)
         ui.input(
             label='Key',
             validation={'Invalid key. Only alphabetic characters are valid.': lambda key: key.isalpha()},
